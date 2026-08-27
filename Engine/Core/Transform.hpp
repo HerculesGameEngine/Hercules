@@ -1,0 +1,23 @@
+#pragma once
+
+namespace Hercules {
+
+struct Vector3 {
+    float x;
+    float y;
+    float z;
+
+    Vector3();
+    Vector3(float x, float y, float z);
+};
+
+class Transform {
+public:
+    Transform();
+
+    Vector3 position;
+    Vector3 rotation;
+    Vector3 scale;
+};
+
+}
